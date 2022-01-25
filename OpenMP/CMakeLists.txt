@@ -27,8 +27,9 @@ endif()
 
 option(PRODUIT_SCALAIRE "compilation du produit scalaire" OFF)
 option(PRODUIT_MATRICIEL "compilation du produit matriciel" OFF)
-option(NEWTON_GRAPHIQUE "compilation du rendu graphique des fractales de Newton" ON)
+option(NEWTON_GRAPHIQUE "compilation du rendu graphique des fractales de Newton" OFF)
 option(NEWTON_NON_GRAPHIQUE "compilation de la generation d'image png des fractales de Newton" OFF)
+option(EQUATION_CHALEUR "Parallelisation de la resolution de l'equation de la chaleur" ON)
 
 find_package(OpenMP)
 
@@ -37,3 +38,4 @@ find_package(OpenMP)
 add_subdirectory(ProduitMatriciel)
 add_subdirectory(ProduitScalaire)
 add_subdirectory(NewtonSDL)
+add_subdirectory(EquationCHaleur)

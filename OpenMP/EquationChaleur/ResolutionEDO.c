@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <math.h>
 #include "ResolutionEDO.h"
+
+#define _USE_MATH_DEFINE
+
 // y : ligne
 // x : colonne
 
